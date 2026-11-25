@@ -5,10 +5,10 @@ import { join } from "node:path";
 
 const entry =
   "fix: the bug is now a feature. the feature is now a bug. reverting the revert of the revert";
-const maxChars = 100;
+const charLimit = 100;
 
-if (entry.length === 0 || entry.length > maxChars) {
-  console.error(`entry must be 1-${maxChars} chars, got ${entry.length}`);
+if (entry.length === 0 || entry.length > charLimit) {
+  console.error(`entry must be 1-${charLimit} chars, got ${entry.length}`);
   process.exit(1);
 }
 
